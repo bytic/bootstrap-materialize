@@ -2,19 +2,19 @@
 
 // Theme palette
 // Change these values to customise colour palettes
-$primary: $purple-500 !default;
+$primary: $blue-700 !default;
 $primary-palette: (
   main: $primary,
-  dark: darken($primary, 50%),
-  light: lighten($primary, 50%)
+  dark: darken($primary, 20%),
+  light: lighten($primary, 20%)
 ) !default;
 
 
-$secondary: $pink-a200 !default;
+$secondary: $blue-grey-600 !default;
 $secondary-palette: (
   main: $secondary,
-  dark: $pink-a400,
-  light: $pink-a100
+  dark: darken($secondary, 20%),
+  light: lighten($secondary, 20%)
 ) !default;
 
 

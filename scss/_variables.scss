@@ -2,8 +2,16 @@ $enable-flex: true; // fully adopt flexbox layouts
 $enable-shadows: true; // enable shadows, set to false to turn off shadows
 
 @import 'variables/palette';
+@import 'variables/elevation-shadow';
+@import 'variables/transition';
 @import 'variables/typography';
 
-@import "~bootstrap/scss/variables"; // from bootstrap node_module
+// Customized BS variables
+@import "bootstrap/variables";
 
+// import their vars after customization for use below
+// from bootstrap node_module
+@import "~bootstrap/scss/variables";
+
+@import 'material/variables/buttons';
 @import 'material/variables/textfield';

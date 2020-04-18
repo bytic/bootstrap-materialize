@@ -1,0 +1,4 @@
+.btn-raised {
+  @include transition-standard(box-shadow);
+  box-shadow: map-get($btn-elevation-shadow, shadow);
+}

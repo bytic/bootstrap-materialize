@@ -1,0 +1,24 @@
+.btn-outline {
+  background-color: transparent !important;
+}
+
+
+@each $color, $values in $theme-colors {
+  .btn-outline {
+    &.btn-#{$color} {
+      color: theme-color($color);
+    }
+
+    &.btn-#{$color}:hover {
+      color: #fff;
+      background-color: theme-color($color) !important;
+
+      &.disabled,
+      &:disabled {
+        color: theme-color($color);
+        background-color: transparent !important;
+      }
+    }
+
+  }
+}

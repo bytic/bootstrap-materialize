@@ -1,10 +1,14 @@
 @charset "UTF-8";
 
 @import "functions";
+@import 'mixins';
 @import "variables";
 
-@import "./bootstrap/core";
+// Base CSS
+@import 'base';
+
+@import "bootstrap/core";
 
 // Bootstrap MATERIAL components
 //@import "@material/textfield/mdc-text-field";
-@import "material/textfield-box";
+@import "material/core";

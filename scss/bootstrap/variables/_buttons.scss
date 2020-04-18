@@ -1,0 +1,48 @@
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+$input-btn-padding-x: 1rem !default; // 1rem
+$input-btn-padding-y: .46875rem !default; // .5rem achieve a 36dp height
+//$input-btn-line-height:                1 !default; //1.25
+$btn-font-weight: 500 !default; // normal
+$btn-box-shadow: none !default;
+$btn-active-box-shadow: none !default; // inset 0 3px 5px rgba(0,0,0,.125)
+
+//
+$btn-primary-color: #fff !default;
+$btn-primary-bg: theme-color(primary) !default;
+$btn-primary-border-color: $btn-primary-bg !default;
+//
+$btn-secondary-color: #fff !default;
+$btn-secondary-bg: theme-color(secondary) !default; // #fff
+$btn-secondary-border-color: $btn-secondary-bg !default;
+//
+$btn-info-color: #fff !default;
+$btn-info-bg: theme-color(info) !default;
+$btn-info-border-color: $btn-info-bg !default;
+//
+$btn-success-color: #fff !default;
+$btn-success-bg: theme-color(success) !default;
+$btn-success-border-color: $btn-success-bg !default;
+//
+$btn-warning-color: #fff !default;
+$btn-warning-bg: theme-color(warning) !default;
+$btn-warning-border-color: $btn-warning-bg !default;
+//
+$btn-danger-color: #fff !default;
+$btn-danger-bg: theme-color(danger) !default;
+$btn-danger-border-color: $btn-danger-bg !default;
+//
+//$btn-link-disabled-color: $gray !default;
+//
+$input-btn-padding-x-sm: .5rem !default;
+$input-btn-padding-y-sm: .40625rem !default; // achieve a 32dp height was .25rem
+
+//
+//$input-btn-padding-x-lg:               1.5rem !default;
+//$input-btn-padding-y-lg:               .75rem !default;
+//
+//// Allows for customizing button radius independently from global border radius
+//$btn-border-radius:              $border-radius !default;
+//$btn-border-radius-lg:           $border-radius-lg !default;
+//$btn-border-radius-sm:           $border-radius-sm !default;

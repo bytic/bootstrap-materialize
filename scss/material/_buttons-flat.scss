@@ -1,0 +1,40 @@
+.btn-flat {
+  background-color: transparent !important;
+  border-color: transparent !important;
+
+  &.disabled,
+  &:disabled {
+  }
+}
+
+@each $color, $values in $theme-colors {
+  .btn-flat {
+    &.btn-#{$color} {
+      color: theme-color($color) !important;
+    }
+
+    &.btn-#{$color}:hover {
+      @include plain-active-focus-hover {
+        background-color: lighten(theme-color($color), 35%) !important;
+      }
+
+      &.disabled,
+      &:disabled {
+        color: color-yiq(theme-color($color));
+      }
+    }
+  }
+}
+
+.btn-flat {
+  &.btn-light {
+    @include focus-hover {
+      background-image: linear-gradient(to bottom, $white-divider, $white-divider);
+    }
+
+    &.active,
+    &:active {
+      background-color: $gray-100;
+    }
+  }
+}
