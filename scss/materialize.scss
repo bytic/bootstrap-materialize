@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import "base/color-pallete";
+
+@import "~bootstrap/scss/functions"; // from bootstrap node_module
+@import "functions";
+
+@import "variables";
+
+@import "./bootstrap/core";
+
+// Bootstrap MATERIAL components
+//@import "@material/textfield/mdc-text-field";
+@import "material/textfield-box";

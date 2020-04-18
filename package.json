@@ -1,0 +1,43 @@
+{
+  "name": "bytic-bootstrap-materialize",
+  "description": "Material Design for Bootstrap 4",
+  "version": "4.3.1",
+  "version_short": "4.3",
+  "homepage": "https://github.com/bytic/bootstrap-materialize",
+  "author": "Gabriel Solomon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytic/bootstrap-materialize.git"
+  },
+  "style": "dist/css/bytic-bootstrap-materialize.css",
+  "sass": "scss/_core.scss",
+  "main": "dist/js/bytic-bootstrap-materialize.js",
+  "scripts": {
+    "build": "npm run clean && mkdirp dist && webpack --mode=development --progress --colors --display=minimal",
+    "build:min": "mkdirp dist && cross-env MDC_ENV=production webpack -p --mode=production --progress --colors --display=minimal",
+    "dist": "npm run build && npm run build:min",
+    "clean": ""
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4",
+    "@babel/preset-env": "^7.7",
+    "node-sass": "^4.13",
+    "babel-loader": "^8.0",
+    "css-loader": "^3.3",
+    "sass-loader": "^7.1",
+    "style-loader": "^1.0",
+    "url-loader": "^2.1",
+    "resolve-url-loader": "^3.1",
+    "extract-text-webpack-plugin": "v4.0.0-beta.0",
+    "webpack": "^4.34",
+    "webpack-merge": "^4.1",
+    "webpack-cli": "^3.3",
+    "bootstrap": "^4.4",
+    "bootstrap-material-design": "^4.1",
+    "daemonite-material": "^4.1",
+    "material-components-web": "^5.1.0"
+  }
+}

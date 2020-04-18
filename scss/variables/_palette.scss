@@ -1,0 +1,100 @@
+// Theme palette
+// Change these values to customise colour palettes
+$primary: $purple-500 !default;
+$primary-palette: (
+  main: $primary,
+  dark: darken($primary, 50%),
+  light: lighten($primary, 50%)
+) !default;
+
+
+$secondary: $pink-a200 !default;
+$secondary-palette: (
+  main: $secondary,
+  dark: $pink-a400,
+  light: $pink-a100
+) !default;
+
+
+$danger: $red-500 !default;
+$danger-palette: (
+  main: $danger,
+  dark: $red-700,
+  light: $red-100
+) !default;
+
+
+$info: $blue-500 !default;
+$info-palette: (
+  main: $info,
+  dark: $blue-700,
+  light: $blue-100
+) !default;
+
+
+$success: $green-500 !default;
+$success-palette: (
+  main: $success,
+  dark: $green-700,
+  light: $green-100
+) !default;
+
+
+$warning: $orange-500 !default;
+$warning-palette: (
+  main: $warning,
+  dark: $orange-700,
+  light: $orange-100
+) !default;
+
+
+$dark: $grey-800 !default;
+$dark-palette: (
+  main: $dark,
+  dark: $grey-900,
+  light: $grey-600
+) !default;
+
+$light: $grey-100 !default;
+$light-palette: (
+  main: $light,
+  dark: $grey-300,
+  light: $grey-50
+) !default;
+
+$theme-palette: () !default;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-palette: map-merge(
+    (
+      primary: $primary-palette,
+      secondary: $secondary-palette,
+      danger: $danger-palette,
+      info: $info-palette,
+      success: $success-palette,
+      warning: $warning-palette,
+      dark: $dark-palette,
+      light: $light-palette
+    ),
+    $theme-palette
+);
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+    (
+      primary: $primary,
+      secondary: $secondary,
+      danger: $danger,
+      info: $info,
+      success: $success,
+      warning: $warning,
+      dark: $dark,
+      light: $light
+    ),
+    $theme-colors
+);
+
+$yiq-contrasted-threshold: 150 !default;
+$yiq-text-dark: $black-primary !default;
+$yiq-text-light: $white-primary !default;

@@ -1,0 +1,8 @@
+# Ignore the root dist as buildcontrol will place it on it's own branch (same for gh-pages)
+.git
+.idea/
+
+node_modules
+
+yarn.lock
+yarn-error.log
