@@ -1,5 +1,7 @@
 // Colour contrast
 
+@import "~bootstrap/scss/functions"; // from bootstrap node_module
+
 @function color-yiq($color) {
   $r: red($color);
   $g: green($color);
