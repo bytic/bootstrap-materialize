@@ -20,6 +20,9 @@
     "clean": ""
   },
   "dependencies": {
+    "bootstrap": "^4.4",
+    "jquery": "^3.4",
+    "popper.js": "^1.16"
   },
   "devDependencies": {
     "@babel/core": "^7.4",
@@ -35,7 +38,6 @@
     "webpack": "^4.34",
     "webpack-merge": "^4.1",
     "webpack-cli": "^3.3",
-    "bootstrap": "^4.4",
     "bootstrap-material-design": "^4.1",
     "daemonite-material": "^4.1",
     "material-components-web": "^5.1.0"
