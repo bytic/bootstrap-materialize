@@ -1,0 +1,53 @@
+.materialize {
+  .form-control {
+    background-clip: padding-box;
+    background-color: transparent;
+    border-color: $textfield-border-color;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0 0 $textfield-border-width;
+    box-shadow: none;
+    color: $textfield-color;
+    display: block;
+    font-size: $textfield-font-size;
+    line-height: $textfield-line-height;
+    padding: $textfield-padding-y $textfield-padding-x calc(#{$textfield-padding-y} - #{$textfield-border-width});
+    width: 100%;
+
+    @include hover {
+      border-color: $textfield-border-color-hover;
+      box-shadow: inset 0 ($textfield-border-width-hover * -1) 0 ($textfield-border-width * -1) $textfield-border-color-hover;
+    }
+
+    &:focus {
+      border-color: $textfield-border-color-focus;
+      box-shadow: inset 0 ($textfield-border-width-focus * -1) 0 ($textfield-border-width * -1) $textfield-border-color-focus;
+      outline: 0;
+    }
+
+    &:invalid:required {
+      outline: 0;
+    }
+  }
+
+  // Form control sizing
+  .form-control-lg {
+    font-size: $textfield-font-size-lg;
+    line-height: $textfield-line-height-lg;
+    padding: $textfield-padding-y-lg $textfield-padding-x-lg calc(#{$textfield-padding-y-lg} - #{$textfield-border-width});
+
+    &[type='file'] {
+      max-height: $textfield-height-lg;
+    }
+  }
+
+  .form-control-sm {
+    font-size: $textfield-font-size-sm;
+    line-height: $textfield-line-height-sm;
+    padding: $textfield-padding-y-sm $textfield-padding-x-sm calc(#{$textfield-padding-y-sm} - #{$textfield-border-width});
+
+    &[type='file'] {
+      max-height: $textfield-height-sm;
+    }
+  }
+}

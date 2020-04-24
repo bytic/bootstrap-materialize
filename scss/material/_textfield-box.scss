@@ -1,22 +1,10 @@
 .textfield-box {
-  background-color: $textfield-box-bg;
-
-  &:focus-within {
-
-    label {
-      //color: $bmd-label-color-focus;
-    }
+  .form-control {
+    background-color: $textfield-box-bg;
+    border-radius: $textfield-box-border-radius;
+    padding: 0 $textfield-box-padding-x;
   }
-
-  label {
-    font-size: 80%;
-    padding: 5px;
-  }
-
   input.form-control,
-  input.custom-file-control,
-  input.form-control::placeholder,
-  input.custom-file-control::placeholder {
-    padding: $textfield-box-padding-y $textfield-box-padding-x calc(#{$textfield-box-padding-y} - #{$textfield-border-width});
+  input.custom-file-control {
   }
 }

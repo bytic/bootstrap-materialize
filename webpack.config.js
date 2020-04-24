@@ -17,6 +17,10 @@ module.exports = {
     'materialize': [
       path.join(__dirname, 'scss/materialize.scss'),
       path.join(__dirname, 'js/materialize.js')
+    ],
+    'materialize-vendors': [
+      path.join(__dirname, 'scss/materialize-vendors.scss'),
+      path.join(__dirname, 'js/materialize-vendors.js')
     ]
   },
 
