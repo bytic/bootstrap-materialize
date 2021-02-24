@@ -16,10 +16,9 @@
   "sass": "scss/_core.scss",
   "main": "dist/js/bytic-bootstrap-materialize.js",
   "scripts": {
-    "build": "npm run clean && mkdirp dist && webpack --mode=development --progress --colors --display=minimal",
+    "build": "mkdirp dist && webpack --mode=development --progress --colors --display=minimal",
     "build:min": "mkdirp dist && cross-env MDC_ENV=production webpack -p --mode=production --progress --colors --display=minimal",
-    "dist": "npm run build && npm run build:min",
-    "clean": ""
+    "dist": "npm run build && npm run build:min"
   },
   "dependencies": {
     "@popperjs/core": "^2.8.3",
