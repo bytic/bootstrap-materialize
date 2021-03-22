@@ -3,3 +3,11 @@
     border-color: $textfield-border-color-hover;
   }
 }
+
+@each $size, $space in $spacers {
+  form.row-mb-#{$size} {
+    .row {
+      margin-bottom: $space;
+    }
+  }
+}

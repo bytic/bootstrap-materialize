@@ -271,6 +271,24 @@ h6,
 .form-control:hover {
   border-color: rgba(0, 0, 0, 0.87); }
 
+form.row-mb-0 .row {
+  margin-bottom: 0; }
+
+form.row-mb-1 .row {
+  margin-bottom: 0.25rem; }
+
+form.row-mb-2 .row {
+  margin-bottom: 0.5rem; }
+
+form.row-mb-3 .row {
+  margin-bottom: 1rem; }
+
+form.row-mb-4 .row {
+  margin-bottom: 1.5rem; }
+
+form.row-mb-5 .row {
+  margin-bottom: 3rem; }
+
 .btn-flat {
   background-color: transparent !important;
   border-color: transparent !important; }
