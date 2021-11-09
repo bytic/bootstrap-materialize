@@ -79,5 +79,4 @@ $line-height-body-1: 1.428572 !default; // 20px
 $line-height-caption: 1.5 !default; // 18px
 
 // Material icons default size
-
-$material-icon-size: (math.div(24, strip-unit($font-size-root))) * 1rem) !default;
+$material-icon-size: math.div(24, strip-unit($font-size-root)) * 1rem !default;
