@@ -1,5 +1,6 @@
-// Colour contrast
+@use "sass:math";
 
+// Colour contrast
 @import "~bootstrap/scss/functions"; // from bootstrap node_module
 
 @function color-yiq($color) {
@@ -37,5 +38,5 @@
 // Strip unit
 
 @function strip-unit($val) {
-  @return $val / ($val * 0 + 1);
+  @return math.div($val, $val * 0 + 1);
 }

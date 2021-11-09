@@ -19,7 +19,7 @@ module.exports = {
                 loader: 'resolve-url-loader'
             },
             {
-                loader: 'sass-loader',
+                loader: 'sass',
                 options: {
                     sourceMap: true,
                     'includePaths': [

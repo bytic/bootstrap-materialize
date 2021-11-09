@@ -9,7 +9,6 @@ const config = require("./build/webpack/config");
 
 const fontsRule = require("./build/webpack/rules/fonts");
 const sassRule = require("./build/webpack/rules/sass");
-const lessRule = require("./build/webpack/rules/less");
 const imagesRule = require("./build/webpack/rules/images");
 
 module.exports = {
@@ -37,7 +36,6 @@ module.exports = {
 
   module: {
     rules: [
-      lessRule,
       sassRule,
       fontsRule,
       imagesRule,
