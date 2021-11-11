@@ -1,0 +1,39 @@
+@use "sass:math";
+
+@function color-yiq($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq:  math.div($r * 299 + $g * 587 + $b * 114, 1000);
+
+  @if ($yiq >= $yiq-contrasted-threshold) {
+    @return $yiq-text-dark;
+  } @else {
+    @return $yiq-text-light;
+  }
+}
+
+// Retrieve a colour
+
+@function color($key: amber) {
+  @return map-get($colors, $key);
+}
+
+@function theme-color($key: primary) {
+  @return map-get(map-get($theme-palette, $key), main);
+}
+
+@function theme-color-dark($key: primary) {
+  @return map-get(map-get($theme-palette, $key), dark);
+}
+
+@function theme-color-light($key: primary) {
+  @return map-get(map-get($theme-palette, $key), light);
+}
+
+// Strip unit
+
+@function strip-unit($val) {
+  @return math.div($val, $val * 0 + 1);
+}
