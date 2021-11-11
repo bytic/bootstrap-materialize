@@ -1,0 +1,28 @@
+.nav-tabs.flat-tabs {
+  border-bottom: 1px solid $grey-300;
+
+
+  .nav-item + .nav-item {
+    margin-left: 1rem;
+  }
+
+  .nav-link {
+    border: 0;
+    border-bottom: 3px solid transparent;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: .5rem;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $primary;
+      background-color: $grey-300;
+    }
+  }
+
+  .nav-link.active {
+    border-bottom-color: $primary;
+    color: $primary;
+  }
+}
