@@ -1,4 +1,4 @@
-@mixin line-clamp($numLines: 1, $lineHeight: 1.5) {
+@mixin line-clamp($numLines: 1, $lineHeight: 2) {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
