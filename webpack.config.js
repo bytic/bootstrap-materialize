@@ -1,9 +1,10 @@
 // 'use strict';
 
 // webpack.config.js
-const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 
 const config = require("./build/webpack/config");
 
@@ -38,21 +39,18 @@ module.exports = {
     rules: [
       sassRule,
       fontsRule,
-      imagesRule,
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: [{
-            loader: "css-loader",
-            options: {importLoaders: 1},
-          }],
-        })
-      }
+      imagesRule
     ],
   },
 
   plugins: [
-    new ExtractTextPlugin(config.outputs.css),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: devMode ? "css/[name].css" : "css/[name].[contenthash].css",
+      chunkFilename: devMode ? "css/[id].css" : "css/[id].[contenthash].css",
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
+    }),
   ],
   stats: "normal"
 };

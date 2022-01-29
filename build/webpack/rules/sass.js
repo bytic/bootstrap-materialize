@@ -1,33 +1,11 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
-const config = require('../config')
-const path = require('path')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    test: /\.scss$/,
-    include: config.paths.assets,
-    use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        //resolve-url-loader may be chained before sass-loader if necessary
-        use: [
-            {
-                loader: 'css-loader',
-                options: {
-                    sourceMap: false
-                }
-            },
-            {
-                loader: 'resolve-url-loader'
-            },
-            {
-                loader: 'sass',
-                options: {
-                    sourceMap: true,
-                    'includePaths': [
-                        path.resolve(__dirname, '../../node_modules/bootstrap-sass/assets/stylesheets/'),
-                        path.resolve(__dirname, '../../node_modules/mdbootstrap/sass/')
-                    ]
-                }
-            }
-        ]
-    })
+  test: /\.(sa|sc|c)ss$/,
+  use: [
+    MiniCssExtractPlugin.loader,
+    "css-loader",
+    "sass-loader",
+  ],
+  sideEffects: true,
 }

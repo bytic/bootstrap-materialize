@@ -1,0 +1,79 @@
+@import "../material/variables/elevations";
+
+// enable shadows, set to false to turn off shadows
+$enable-shadows: true !default;
+
+// Shadow
+// Based on https://material.google.com/what-is-material/elevation-shadows.html#elevation-shadows-shadows
+
+$elevations-baseline-color: black !default;
+
+$shadows: () !default;
+
+@for $i from 0 through 24 {
+  $shadows: map-merge(
+      (
+        $i: elevation-box-shadow($i, $elevations-baseline-color, 0),
+      ),
+      $shadows
+  );
+}
+
+$shadows: map-merge(
+    (
+      'xs': map-get($shadows, 1),
+      's': map-get($shadows, 2),
+      'm': map-get($shadows, 4),
+      'l': map-get($shadows, 7),
+      'xl': map-get($shadows, 12),
+      'xxl': map-get($shadows, 18),
+    ),
+    $shadows
+);
+
+$shadows-strong: () !default;
+
+@for $i from 0 through 24 {
+  $shadows-strong: map-merge(
+      (
+        $i: elevation-box-shadow($i, $elevations-baseline-color, 0.1),
+      ),
+      $shadows-strong
+  );
+}
+
+$shadows-strong: map-merge(
+    (
+      'xs': map-get($shadows-strong, 1),
+      's': map-get($shadows-strong, 2),
+      'm': map-get($shadows-strong, 4),
+      'l': map-get($shadows-strong, 7),
+      'xl': map-get($shadows-strong, 12),
+      'xxl': map-get($shadows-strong, 18),
+    ),
+    $shadows-strong
+);
+
+$shadows-soft: () !default;
+
+@for $i from 0 through 24 {
+  $shadows-soft: map-merge(
+      (
+        $i: elevation-box-shadow($i, $elevations-baseline-color, -0.1),
+      ),
+      $shadows-soft
+  );
+}
+
+$shadows-soft: map-merge(
+    (
+      'xs': map-get($shadows-soft, 1),
+      's': map-get($shadows-soft, 2),
+      'm': map-get($shadows-soft, 4),
+      'l': map-get($shadows-soft, 7),
+      'xl': map-get($shadows-soft, 12),
+      'xxl': map-get($shadows-soft, 18),
+    ),
+    $shadows-soft
+);
+

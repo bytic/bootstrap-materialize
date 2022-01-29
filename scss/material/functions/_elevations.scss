@@ -1,0 +1,42 @@
+///
+/// Creates a box-shadow from the Material elevation system.
+/// @param {Number} $level - the level of the Material elevation system.
+/// @param {String} $color - the color of the shadow.
+/// @param {Number} $opacity-boost [0] - optional opacity boost for the shadow.
+/// @return {List} the complete box shadow.
+///
+@function material_box-shadow($level, $color, $opacity-boost: 0) {
+  $umbra-z-value: map-get($elevations-umbra-map, $level);
+  $penumbra-z-value: map-get($elevations-penumbra-map, $level);
+  $ambient-z-value: map-get($elevations-ambient-map, $level);
+
+  $umbra-color: rgba($color, $elevations-umbra-opacity + $opacity-boost);
+  $penumbra-color: rgba($color, $elevations-penumbra-opacity + $opacity-boost);
+  $ambient-color: rgba($color, $elevations-ambient-opacity + $opacity-boost);
+
+  @return (
+    #{'#{$umbra-z-value} #{$umbra-color}'},
+    #{'#{$penumbra-z-value} #{$penumbra-color}'},
+    #{$ambient-z-value} $ambient-color
+  );
+}
+
+// Returns the correct box-shadow specified by $z-value.
+// The $z-value must be between 0 and 24.
+// If $color has an alpha channel, it will be ignored and overridden. To increase the opacity of the shadow, use
+// $opacity-boost.
+@function elevation-box-shadow(
+  $z-value,
+  $color: $elevations-baseline-color,
+  $opacity-boost: 0
+) {
+  //@if meta.type-of($z-value) != number or not math.is-unitless($z-value) {
+  //  @error "$z-value must be a unitless number, but received '#{$z-value}'";
+  //}
+
+  @if $z-value < 0 or $z-value > 24 {
+    @error "$z-value must be between 0 and 24, but received '#{$z-value}'";
+  }
+
+  @return material_box-shadow($z-value, $color, $opacity-boost);
+}
