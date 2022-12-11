@@ -1,5 +1,6 @@
 $enable-flex: true; // fully adopt flexbox layouts
 
+@import 'spacing';
 @import 'palette';
 @import 'transition';
 @import 'typography';
@@ -7,4 +8,5 @@ $enable-flex: true; // fully adopt flexbox layouts
 @import 'shadows';
 @import 'elevation-shadow';
 
+@import 'carousel';
 

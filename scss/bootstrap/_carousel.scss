@@ -1,0 +1,52 @@
+//
+// Left/right controls for nav
+//
+
+
+// Optional indicator pips/controls
+//
+// Add a container (such as a list) with the following class and add an item (ideally a focusable control,
+// like a button) with data-bs-target for each slide your carousel holds.
+
+.carousel-indicators {
+  left: 50%; // Boosted mod
+  right: auto; // Boosted mod
+
+  padding: $carousel-indicators-padding-y 0; // Boosted mod
+  // Boosted mod
+  margin: 0 0 $spacer;
+  background: rgba($carousel-indicator-active-bg, .5); // Boosted mod
+  transform: translateX(-50%); // Boosted mod
+  @include border-radius($spacer, $spacer); // Boosted mod
+
+  [data-bs-target] {
+
+    margin-right: $carousel-indicator-spacer;
+    margin-left: $carousel-indicator-spacer;
+
+    // Boosted mod
+    border-top: 0;
+    border-bottom: 0;
+    @include border-radius(50%, 50%);
+    @include target-size($carousel-indicator-hit-area-height);
+
+    &:hover,
+    &:focus {
+      background-color: color-contrast($carousel-indicator-active-bg);
+    }
+
+    &:hover {
+      transform: scale($carousel-indicator-hover-scale);
+
+      &::before {
+        transform: translate3d(-50%, -50%, 0) scale($carousel-indicator-active-scale);
+      }
+    }
+
+    .active {
+      background-color: $carousel-indicator-active-bg;
+      border-color: color-contrast($carousel-indicator-active-bg);
+      opacity: $carousel-indicator-active-opacity;
+    }
+  }
+}

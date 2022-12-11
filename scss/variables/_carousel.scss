@@ -1,0 +1,22 @@
+$carousel-control-color: $black !default;
+$carousel-control-width: $spacer * 3 !default;
+$carousel-control-opacity: null !default;
+$carousel-control-hover-opacity: null !default;
+$carousel-control-transition: $transition-focus !default;
+
+$carousel-indicator-width: .5rem !default;
+$carousel-indicator-height: .5rem !default;
+$carousel-indicator-hit-area-height: $spacer * 1.5 !default;
+$carousel-indicator-spacer: $spacer * .5 !default;
+$carousel-indicator-opacity: null !default;
+$carousel-indicator-active-bg: $white !default;
+$carousel-indicator-active-opacity: null !default;
+$carousel-indicator-transition: null !default;
+
+// Boosted mod
+$carousel-indicator-hover-scale: 1.5 !default;
+$carousel-indicator-active-scale: calc(2 / 3) !default; // stylelint-disable-line function-disallowed-list
+$carousel-indicator-active-radius: 0 100% 100% 0 / 50% !default;
+$carousel-indicator-animation-duration: 5000ms !default;
+$carousel-indicators-padding-y: $spacer * .5 !default;
+// End mod

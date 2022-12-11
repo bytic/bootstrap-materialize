@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Carousel · Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../dist/css/materialize-vendors.css" rel="stylesheet">
+  <link href="../dist/css/materialize.css" rel="stylesheet">
+  <!-- Documentation extras -->
+  <style>
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="h1 fw-bold">
+    Carousel
+  </h2>
+
+  <hr class="my-5">
+
+  <h3 id="slides-only">
+    Slides only
+  </h3>
+  <p>Here&rsquo;s a carousel with slides only. Note the presence of the <code>.d-block</code> and <code>.w-100</code> on
+    carousel images to prevent browser default image alignment.</p>
+  <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg aria-label="Placeholder: First slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#777" height="100%" width="100%"/>
+          <text dy=".3em" fill="#555" x="50%" y="50%">First slide</text>
+        </svg>
+
+      </div>
+      <div class="carousel-item">
+        <svg aria-label="Placeholder: Second slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#666" height="100%" width="100%"/>
+          <text dy=".3em" fill="#444" x="50%" y="50%">Second slide</text>
+        </svg>
+
+      </div>
+      <div class="carousel-item">
+        <svg aria-label="Placeholder: Third slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#555" height="100%" width="100%"/>
+          <text dy=".3em" fill="#333" x="50%" y="50%">Third slide</text>
+        </svg>
+
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <h3>
+    With controls
+  </h3>
+  <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleControls">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg aria-label="Placeholder: First slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#777" height="100%" width="100%"/>
+          <text dy=".3em" fill="#555" x="50%" y="50%">First slide</text>
+        </svg>
+
+      </div>
+      <div class="carousel-item">
+        <svg aria-label="Placeholder: Second slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#666" height="100%" width="100%"/>
+          <text dy=".3em" fill="#444" x="50%" y="50%">Second slide</text>
+        </svg>
+
+      </div>
+      <div class="carousel-item">
+        <svg aria-label="Placeholder: Third slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#555" height="100%" width="100%"/>
+          <text dy=".3em" fill="#333" x="50%" y="50%">Third slide</text>
+        </svg>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleControls" type="button">
+      <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleControls" type="button">
+      <span aria-hidden="true" class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <hr class="my-5">
+
+  <h3>
+    With indicators
+  </h3>
+  <div class="carousel slide" data-bs-ride="true" id="carouselExampleIndicators">
+    <div class="carousel-indicators">
+      <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+              data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+              type="button"></button>
+      <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+              type="button"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg aria-label="Placeholder: First slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#777" height="100%" width="100%"/>
+          <text dy=".3em" fill="#555" x="50%" y="50%">First slide</text>
+        </svg>
+
+      </div>
+      <div class="carousel-item">
+        <svg aria-label="Placeholder: Second slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#666" height="100%" width="100%"/>
+          <text dy=".3em" fill="#444" x="50%" y="50%">Second slide</text>
+        </svg>
+
+      </div>
+      <div class="carousel-item">
+        <svg aria-label="Placeholder: Third slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" focusable="false"
+             height="400" preserveAspectRatio="xMidYMid slice" role="img"
+             width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title>
+          <rect fill="#555" height="100%" width="100%"/>
+          <text dy=".3em" fill="#333" x="50%" y="50%">Third slide</text>
+        </svg>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+            type="button">
+      <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+            type="button">
+      <span aria-hidden="true" class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p>&nbsp;</p>
+</div>
+<script src="../dist/js/materialize-vendors.js"></script>
+<script src="../dist/js/materialize.js"></script>
+</body>
+</html>

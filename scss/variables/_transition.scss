@@ -1,3 +1,10 @@
+$transition-duration: .2s !default; // Boosted mod
+$transition-timing: ease-in-out !default; // Boosted mod
+
+// scss-docs-start focus-transition
+$transition-focus: outline-offset $transition-duration $transition-timing !default; // Boosted mod
+// scss-docs-end focus-transition
+
 $transition-scale: 0.87 !default;
 
 // The movement of an element is based on https://material.google.com/motion/movement.html
@@ -5,8 +12,8 @@ $transition-scale: 0.87 !default;
 // Transition duration
 // Based on https://material.google.com/motion/duration-easing.html#duration-easing-common-durations
 
-$transition-duration-desktop:          0.2s !default;
-$transition-duration-desktop-complex:  0.25s !default;
+$transition-duration-desktop: 0.2s !default;
+$transition-duration-desktop-complex: 0.25s !default;
 $transition-duration-desktop-entering: 0.15s !default;
 $transition-duration-desktop-leaving:  0.13s !default;
 
