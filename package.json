@@ -21,7 +21,7 @@
     "dist": "npm run build && npm run build:min"
   },
   "dependencies": {
-    "@popperjs/core": "^2.9.2",
+    "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0"
   },
   "devDependencies": {
