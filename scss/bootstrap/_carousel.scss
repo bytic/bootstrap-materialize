@@ -4,15 +4,11 @@
 
 
 // Optional indicator pips/controls
-//
-// Add a container (such as a list) with the following class and add an item (ideally a focusable control,
-// like a button) with data-bs-target for each slide your carousel holds.
 
-.carousel-indicators {
-  left: 50%; // Boosted mod
-  right: auto; // Boosted mod
+.carousel-indicators.indicators-pips {
+  left: 50% !important; // Boosted mod
+  right: auto !important; // Boosted mod
 
-  padding: $carousel-indicators-padding-y 0; // Boosted mod
   // Boosted mod
   margin: 0 0 $spacer;
   background: rgba($carousel-indicator-active-bg, .5); // Boosted mod
@@ -25,8 +21,9 @@
     margin-left: $carousel-indicator-spacer;
 
     // Boosted mod
-    border-top: 0;
-    border-bottom: 0;
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+
     @include border-radius(50%, 50%);
     @include target-size($carousel-indicator-hit-area-height);
 
