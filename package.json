@@ -1,7 +1,7 @@
 {
   "name": "bytic-bootstrap-materialize",
   "description": "Material Design for Bootstrap 5",
-  "version": "5.0.1",
+  "version": "5.0.3",
   "version_short": "5.0",
   "homepage": "https://github.com/bytic/bootstrap-materialize",
   "author": "Gabriel Solomon",
@@ -22,21 +22,23 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.0"
+    "bootstrap": "^5.3.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.0",
-    "@babel/preset-env": "^7.10.0",
-    "babel-loader": "^9.1",
-    "css-loader": "^6.7",
-    "mini-css-extract-plugin": "^2.5.3",
-    "resolve-url-loader": "^5.0",
-    "sass": "^1.43",
-    "sass-loader": "^13.0",
-    "style-loader": "^3.0",
-    "url-loader": "^4.0",
-    "webpack": "^5.35",
-    "webpack-cli": "^5.1",
-    "webpack-merge": "^5.8"
-  }
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "sass-migrator": "^2.3.1",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-merge": "^6.0.1"
+  },
+  "packageManager": "yarn@4.8.0"
 }

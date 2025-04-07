@@ -5,10 +5,10 @@
 @import "variables";
 
 // Base CSS
-@import 'base/all';
+@import 'base';
 
-@import "bootstrap/core";
+@import "bootstrap";
 
 // Bootstrap MATERIAL components
-//@import "@material/textfield/mdc-text-field";
-@import "material/core";
+//@use "@material/textfield/mdc-text-field";
+@import "material";

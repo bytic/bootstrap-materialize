@@ -1,6 +1,6 @@
 
 // Customized Material variables
-@import "variables/core";
+@import "./variables/index";
 
 // Customized BS variables
 @import "bootstrap/variables";
@@ -9,4 +9,4 @@
 // from bootstrap node_module
 @import "~bootstrap/scss/variables";
 
-@import 'material/variables/core';
+@import 'material/variables';

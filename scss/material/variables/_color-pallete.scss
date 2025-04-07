@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Material colour palette
 // Based on https://material.google.com/style/color.html#color-color-palette
 
@@ -699,10 +701,10 @@ $black-secondary-opacity: 0.54 !default;
 $black-hint-opacity:      0.38 !default;
 $black-divider-opacity:   0.12 !default;
 
-$black-primary:           rgba(red($black), green($black), blue($black), $black-primary-opacity) !default;
-$black-secondary:         rgba(red($black), green($black), blue($black), $black-secondary-opacity) !default;
-$black-hint:              rgba(red($black), green($black), blue($black), $black-hint-opacity) !default;
-$black-divider:           rgba(red($black), green($black), blue($black), $black-divider-opacity) !default;
+$black-primary: rgba(color.channel($black, 'red', $space: rgb), color.channel($black, 'green', $space: rgb), color.channel($black, 'blue', $space: rgb), $black-primary-opacity) !default;
+$black-secondary: rgba(color.channel($black, 'red', $space: rgb), color.channel($black, 'green', $space: rgb), color.channel($black, 'blue', $space: rgb), $black-secondary-opacity) !default;
+$black-hint: rgba(color.channel($black, 'red', $space: rgb), color.channel($black, 'green', $space: rgb), color.channel($black, 'blue', $space: rgb), $black-hint-opacity) !default;
+$black-divider: rgba(color.channel($black, 'red', $space: rgb), color.channel($black, 'green', $space: rgb), color.channel($black, 'blue', $space: rgb), $black-divider-opacity) !default;
 
 $white:                   #ffffff !default;
 
@@ -711,10 +713,10 @@ $white-secondary-opacity: 0.7 !default;
 $white-hint-opacity:      0.5 !default;
 $white-divider-opacity:   0.12 !default;
 
-$white-primary:           rgba(red($white), green($white), blue($white), $white-primary-opacity) !default;
-$white-secondary:         rgba(red($white), green($white), blue($white), $white-secondary-opacity) !default;
-$white-hint:              rgba(red($white), green($white), blue($white), $white-hint-opacity) !default;
-$white-divider:           rgba(red($white), green($white), blue($white), $white-divider-opacity) !default;
+$white-primary: rgba(color.channel($white, 'red', $space: rgb), color.channel($white, 'green', $space: rgb), color.channel($white, 'blue', $space: rgb), $white-primary-opacity) !default;
+$white-secondary: rgba(color.channel($white, 'red', $space: rgb), color.channel($white, 'green', $space: rgb), color.channel($white, 'blue', $space: rgb), $white-secondary-opacity) !default;
+$white-hint: rgba(color.channel($white, 'red', $space: rgb), color.channel($white, 'green', $space: rgb), color.channel($white, 'blue', $space: rgb), $white-hint-opacity) !default;
+$white-divider: rgba(color.channel($white, 'red', $space: rgb), color.channel($white, 'green', $space: rgb), color.channel($white, 'blue', $space: rgb), $white-divider-opacity) !default;
 
 // Theme
 // Based on https://material.google.com/style/color.html#color-themes

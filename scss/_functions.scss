@@ -1,6 +1,6 @@
-@import "material/functions/core";
+@import "./material/functions";
 
 // from bootstrap node_module
 @import "~bootstrap/scss/functions";
 
-@import "functions/core";
+@import "./functions/index";

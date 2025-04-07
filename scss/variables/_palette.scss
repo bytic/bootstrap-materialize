@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "../material/variables/color-pallete";
 
 // Theme palette
@@ -5,16 +7,16 @@
 $primary: $blue-700 !default;
 $primary-palette: (
   main: $primary,
-  dark: darken($primary, 20%),
-  light: lighten($primary, 20%)
+  dark: color.adjust($primary, $lightness: -20%, $space: hsl),
+  light: color.adjust($primary, $lightness: 20%, $space: hsl)
 ) !default;
 
 
 $secondary: $blue-grey-600 !default;
 $secondary-palette: (
   main: $secondary,
-  dark: darken($secondary, 20%),
-  light: lighten($secondary, 20%)
+  dark: color.adjust($secondary, $lightness: -20%, $space: hsl),
+  light: color.adjust($secondary, $lightness: 20%, $space: hsl)
 ) !default;
 
 

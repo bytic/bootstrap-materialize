@@ -2,7 +2,14 @@
 .git
 .idea/
 
-node_modules
-
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 yarn.lock
 yarn-error.log
+
+node_modules
