@@ -4,15 +4,15 @@
   }
 
   @each $color, $value in $colors {
-    --#{$color}: #{$value};
+    --#{$color}: #{'' + $value};
   }
 
-  @each $color, $values in $theme-colors {
+  @each $color, $values in $theme-palette {
     @each $level, $value in $values {
       @if $level == 'color' {
-        --#{$color}: #{$value};
+        --#{$color}: #{'' + $value};
       } @else {
-        --#{$color}-#{$level}: #{$value};
+        --#{$color}-#{$level}: #{'' + $value};
       }
     }
   }

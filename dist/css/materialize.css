@@ -1,6 +1,6 @@
-/*!****************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/materialize.scss ***!
-  \****************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./scss/materialize.scss ***!
+  \********************************************************************************************************************************************/
 :root {
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -27,14 +27,30 @@
   --red: #f44336;
   --teal: #009688;
   --yellow: #ffeb3b;
-  --primary-#1976d2: ;
-  --secondary-#546e7a: ;
-  --danger-#f44336: ;
-  --info-#2196f3: ;
-  --success-#4caf50: ;
-  --warning-#ff9800: ;
-  --dark-#424242: ;
-  --light-#f5f5f5: ;
+  --primary-main: #1976d2;
+  --primary-dark: rgb(14.1489361702, 66.7829787234, 118.8510638298);
+  --primary-light: rgb(100.4042553191, 168.8680851064, 236.5957446809);
+  --secondary-main: #546e7a;
+  --secondary-dark: rgb(42.4077669903, 55.5339805825, 61.5922330097);
+  --secondary-light: rgb(135.3689320388, 160.8640776699, 172.6310679612);
+  --danger-main: #f44336;
+  --danger-dark: #d32f2f;
+  --danger-light: #ffcdd2;
+  --info-main: #2196f3;
+  --info-dark: #1976d2;
+  --info-light: #bbdefb;
+  --success-main: #4caf50;
+  --success-dark: #388e3c;
+  --success-light: #c8e6c9;
+  --warning-main: #ff9800;
+  --warning-dark: #f57c00;
+  --warning-light: #ffe0b2;
+  --dark-main: #424242;
+  --dark-dark: #212121;
+  --dark-light: #757575;
+  --light-main: #f5f5f5;
+  --light-dark: #e0e0e0;
+  --light-light: #fafafa;
   --font-family-monospace: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-serif: "Roboto Slab", Georgia, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1050,7 +1066,6 @@ form.row-mb-5 .row {
   transition-duration: 0.3s;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 @media (min-width: 576px) {
   .btn-raised {
@@ -1066,6 +1081,9 @@ form.row-mb-5 .row {
   .btn-raised {
     transition: none;
   }
+}
+.btn-raised {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 .nav-tabs.flat-tabs {
