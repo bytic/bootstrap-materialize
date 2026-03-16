@@ -1,0 +1,16 @@
+// Dark mode overrides for Material Design variables
+// Applied via Bootstrap 5.3's [data-bs-theme="dark"] mechanism
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #{$grey-900};
+  --bs-body-color: #{$grey-100};
+
+  // Material text field adjustments
+  --material-textfield-border-color: #{rgba($white, 0.42)};
+  --material-textfield-border-color-hover: #{rgba($white, 0.87)};
+  --material-textfield-color: #{$grey-100};
+
+  // Material surface/card backgrounds
+  --material-surface-bg: #{$grey-800};
+  --material-surface-bg-elevated: #{$grey-700};
+}
