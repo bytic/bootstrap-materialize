@@ -1,4 +1,4 @@
 .btn-raised {
-  @include transition-standard(box-shadow);
   box-shadow: $btn-elevation-shadow;
+  @include transition-standard(box-shadow);
 }

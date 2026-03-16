@@ -52,5 +52,13 @@ module.exports = {
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
+  performance: {
+    hints: false,
+  },
+  ignoreWarnings: [
+    (warning) =>
+      typeof warning?.message === "string" &&
+      warning.message.includes("The keyword 'none' must be used as a single argument."),
+  ],
   stats: "normal"
 };

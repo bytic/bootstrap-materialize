@@ -9,7 +9,8 @@ module.exports = {
       loader: "sass-loader",
       options: {
         sassOptions: {
-          silenceDeprecations: ["import", "global-builtin", "color-functions", "if-function"],
+          quietDeps: true,
+          silenceDeprecations: ["import", "global-builtin", "color-functions"],
         },
       },
     },
