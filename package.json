@@ -27,17 +27,16 @@
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
-    "babel-loader": "^10.0.0",
+    "babel-loader": "^10.1.1",
     "css-loader": "^7.1.2",
-    "mini-css-extract-plugin": "^2.9.2",
+    "mini-css-extract-plugin": "^2.10.1",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.86.3",
+    "sass": "^1.98.0",
     "sass-loader": "^16.0.5",
     "sass-migrator": "^2.3.1",
     "style-loader": "^4.0.0",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.98.0",
-    "webpack-cli": "^6.0.1",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.0",
     "webpack-merge": "^6.0.1"
   },
   "packageManager": "yarn@4.8.0"

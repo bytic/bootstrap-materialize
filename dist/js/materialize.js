@@ -9,26 +9,26 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/materialize.js":
+/***/ "./js/materialize.js"
 /*!***************************!*\
   !*** ./js/materialize.js ***!
   \***************************/
-/***/ (() => {
+() {
 
-eval("\n\n//# sourceURL=webpack://bytic-bootstrap-materialize/./js/materialize.js?");
+eval("{\n\n//# sourceURL=webpack://bytic-bootstrap-materialize/./js/materialize.js?\n}");
 
-/***/ }),
+/***/ },
 
-/***/ "./scss/materialize.scss":
+/***/ "./scss/materialize.scss"
 /*!*******************************!*\
   !*** ./scss/materialize.scss ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bytic-bootstrap-materialize/./scss/materialize.scss?");
+eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://bytic-bootstrap-materialize/./scss/materialize.scss?\n}");
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/
@@ -52,9 +52,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_modules__["./scss/materialize.scss"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./scss/materialize.scss"](0,{},__webpack_require__);
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./js/materialize.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./js/materialize.js"](0,__webpack_exports__,__webpack_require__);
 /******/ 	
 /******/ })()
 ;

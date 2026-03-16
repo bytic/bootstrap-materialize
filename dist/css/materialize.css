@@ -1,6 +1,16 @@
-/*!****************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/materialize.scss ***!
-  \****************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./scss/materialize.scss ***!
+  \********************************************************************************************************************************************/
+[data-bs-theme=dark] {
+  --bs-body-bg: #212121;
+  --bs-body-color: #f5f5f5;
+  --material-textfield-border-color: rgba(255, 255, 255, 0.42);
+  --material-textfield-border-color-hover: rgba(255, 255, 255, 0.87);
+  --material-textfield-color: #f5f5f5;
+  --material-surface-bg: #424242;
+  --material-surface-bg-elevated: #616161;
+}
+
 :root {
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -27,14 +37,30 @@
   --red: #f44336;
   --teal: #009688;
   --yellow: #ffeb3b;
-  --primary-#1976d2: ;
-  --secondary-#546e7a: ;
-  --danger-#f44336: ;
-  --info-#2196f3: ;
-  --success-#4caf50: ;
-  --warning-#ff9800: ;
-  --dark-#424242: ;
-  --light-#f5f5f5: ;
+  --primary-main: #1976d2;
+  --primary-dark: rgb(14.148936170212774, 66.78297872340428, 118.85106382978724);
+  --primary-light: rgb(100.40425531914894, 168.868085106383, 236.59574468085106);
+  --secondary-main: #546e7a;
+  --secondary-dark: rgb(42.407766990291265, 55.53398058252427, 61.592233009708735);
+  --secondary-light: rgb(135.3689320388349, 160.8640776699029, 172.63106796116506);
+  --danger-main: #f44336;
+  --danger-dark: #d32f2f;
+  --danger-light: #ffcdd2;
+  --info-main: #2196f3;
+  --info-dark: #1976d2;
+  --info-light: #bbdefb;
+  --success-main: #4caf50;
+  --success-dark: #388e3c;
+  --success-light: #c8e6c9;
+  --warning-main: #ff9800;
+  --warning-dark: #f57c00;
+  --warning-light: #ffe0b2;
+  --dark-main: #424242;
+  --dark-dark: #212121;
+  --dark-light: #757575;
+  --light-main: #f5f5f5;
+  --light-dark: #e0e0e0;
+  --light-light: #fafafa;
   --font-family-monospace: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-serif: "Roboto Slab", Georgia, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -205,6 +231,20 @@ h6,
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.176471;
+}
+
+.display-5 {
+  font-size: 1.50000025rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.333334;
+}
+
+.display-6 {
+  font-size: 1.249999625rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 .shadow-xs {
@@ -966,7 +1006,7 @@ form.row-mb-5 .row {
   background-color: rgb(168.7659574468, 206.9553191489, 244.7340425532) !important;
 }
 .btn-flat.btn-primary:hover.disabled, .btn-flat.btn-primary:hover:disabled {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .btn-flat.btn-secondary {
@@ -976,7 +1016,7 @@ form.row-mb-5 .row {
   background-color: rgb(180.6747572816, 196.5145631068, 203.8252427184) !important;
 }
 .btn-flat.btn-secondary:hover.disabled, .btn-flat.btn-secondary:hover:disabled {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .btn-flat.btn-danger {
@@ -986,7 +1026,7 @@ form.row-mb-5 .row {
   background-color: rgb(253.2617924528, 225.2924528302, 223.2382075472) !important;
 }
 .btn-flat.btn-danger:hover.disabled, .btn-flat.btn-danger:hover:disabled {
-  color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .btn-flat.btn-info {
@@ -996,7 +1036,7 @@ form.row-mb-5 .row {
   background-color: rgb(202.3461538462, 230.0961538462, 252.1538461538) !important;
 }
 .btn-flat.btn-info:hover.disabled, .btn-flat.btn-info:hover:disabled {
-  color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .btn-flat.btn-success {
@@ -1006,7 +1046,7 @@ form.row-mb-5 .row {
   background-color: rgb(198.874501992, 230.625498008, 200.1573705179) !important;
 }
 .btn-flat.btn-success:hover.disabled, .btn-flat.btn-success:hover:disabled {
-  color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .btn-flat.btn-warning {
@@ -1016,7 +1056,7 @@ form.row-mb-5 .row {
   background-color: rgb(255, 224.1, 178.5) !important;
 }
 .btn-flat.btn-warning:hover.disabled, .btn-flat.btn-warning:hover:disabled {
-  color: rgba(0, 0, 0, 0.87);
+  color: #000000;
 }
 
 .btn-flat.btn-dark {
@@ -1026,7 +1066,7 @@ form.row-mb-5 .row {
   background-color: rgb(155.25, 155.25, 155.25) !important;
 }
 .btn-flat.btn-dark:hover.disabled, .btn-flat.btn-dark:hover:disabled {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .btn-flat.btn-light {
@@ -1036,7 +1076,7 @@ form.row-mb-5 .row {
   background-color: hsl(0, 0%, 131.0784313725%) !important;
 }
 .btn-flat.btn-light:hover.disabled, .btn-flat.btn-light:hover:disabled {
-  color: rgba(0, 0, 0, 0.87);
+  color: #000000;
 }
 
 .btn-flat.btn-light:focus, .btn-flat.btn-light:hover {
@@ -1050,7 +1090,6 @@ form.row-mb-5 .row {
   transition-duration: 0.3s;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 @media (min-width: 576px) {
   .btn-raised {
@@ -1066,6 +1105,9 @@ form.row-mb-5 .row {
   .btn-raised {
     transition: none;
   }
+}
+.btn-raised {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 .nav-tabs.flat-tabs {

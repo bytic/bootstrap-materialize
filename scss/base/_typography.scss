@@ -128,3 +128,11 @@ h6,
 .display-4 {
   @include typography-display-1;
 }
+
+.display-5 {
+  @include typography-headline;
+}
+
+.display-6 {
+  @include typography-title;
+}
